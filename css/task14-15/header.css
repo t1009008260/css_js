@@ -1,0 +1,121 @@
+.show {
+  display: block;
+  transition: all 2s linear;
+  position: absolute;
+  z-index: 99;
+}
+/* 头部 */
+header .top {
+  height: 0.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .top .num {
+  color: #29b078;
+  font-size: .14rem;
+}
+header .top .logos {
+  display: flex;
+  justify-content: space-between;
+  width: 1.1rem;
+}
+header .top img {
+  width: 0.25rem;
+  height: 0.24rem;
+}
+header .top1 {
+  display: none;
+  justify-content: flex-end;
+  padding-right: .1rem;
+}
+header .top1 span {
+  color: #29b078;
+}
+header nav {
+  background-color: #29b078;
+  line-height: 1rem;
+}
+header nav .nav1 {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+}
+header nav .nav1 img {
+  width: 1.07rem;
+  height: 0.49rem;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -0.25rem;
+}
+header nav .nav1 li {
+  text-align: center;
+  border-bottom: 2px solid #29b078;
+  margin-left: .5rem;
+}
+header nav .nav1 li:hover {
+  border-bottom: 2px solid #fff;
+}
+header nav .nav1 li:hover a {
+  color: #fff;
+  text-decoration: none;
+}
+header nav .nav1 li a {
+  color: #fff;
+}
+header nav .dropdown {
+  height: 1rem;
+  display: none;
+}
+header nav .dropdown .ji {
+  width: 1.07rem;
+  height: 0.49rem;
+  position: relative;
+  left: .2rem ;
+  top: 0;
+}
+header nav .dropdown .btn {
+  padding: 0;
+  border: none;
+  float: right;
+  margin-right: .2rem;
+  margin-top: .35rem;
+}
+header nav .dropdown .dropdown-menu {
+  width: 100%;
+  background-color: #29b078;
+  margin: 0;
+  padding: 5px 0;
+  font-size: 14px;
+  text-align: left;
+  list-style: none;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+header nav .dropdown .dropdown-menu li {
+  line-height: .5rem;
+  padding-left: .2rem;
+}
+header nav .dropdown .dropdown-menu li a {
+  color: #fff;
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 64px !important;
+  }
+  header .top {
+    display: none !important;
+  }
+  header .top1 {
+    display: flex !important;
+  }
+  header .dropdown {
+    display: block !important;
+  }
+  header .nav1 {
+    display: none !important;
+  }
+}

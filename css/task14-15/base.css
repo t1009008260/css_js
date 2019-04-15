@@ -1,0 +1,198 @@
+@charset "UTF-8";
+/*css 初始化 */
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img {
+  margin: 0;
+  padding: 0;
+}
+fieldset,
+img,
+input,
+button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  outline-style: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+input {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: "SimSun", "宋体";
+}
+select,
+input {
+  vertical-align: middle;
+}
+select,
+input,
+textarea {
+  font-size: 12px;
+  margin: 0;
+}
+textarea {
+  resize: none;
+}
+/*防止拖动*/
+img {
+  border: 0;
+  vertical-align: middle;
+}
+/*  去掉图片低测默认的3像素空白缝隙*/
+table {
+  border-collapse: collapse;
+}
+a {
+  color: #999;
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 100%;
+}
+s,
+i,
+em {
+  font-style: normal;
+  text-decoration: none;
+}
+/*css样式表*/
+/*css为clearfix，清除浮动*/
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+  /*IE/7/6*/
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.al {
+  text-align: left;
+}
+.ac {
+  text-align: center;
+}
+.ar {
+  text-align: right;
+}
+.hide {
+  display: none;
+  transition: all 2s linear;
+}
+.db {
+  display: block;
+}
+.dib {
+  display: inline-block;
+}
+.df {
+  display: flex;
+}
+.jsb {
+  justify-content: space-between;
+}
+.aic {
+  align-items: center;
+}
+.pr {
+  position: relative;
+}
+.pa {
+  position: absolute;
+}
+.pf {
+  position: fixed;
+}
+.m0a {
+  margin: 0 auto;
+}
+.w {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.container {
+  padding: 0 15px;
+}
+.col-md-8 {
+  width: 72%;
+}
+.col-md-5 {
+  width: 41.66666667%;
+}
+.col-md-4 {
+  width: 33.33333333%;
+}
+.col-md-3 {
+  width: 25%;
+}
+.col-md-1 {
+  width: 8%;
+}
+body {
+  font-size: .16rem;
+  font-family: "微软雅黑";
+  color: #999;
+  background-color: #fafafa;
+}
+html {
+  font-size: 8.3vw;
+  /*100/1200*/
+}
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 64px !important;
+  }
+}
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 82.66666667px !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 100px !important;
+  }
+}
+/* 小屏幕（平板，大于等于 768px） */
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+/* 大屏幕（大桌面显示器，大于等于 1200px） */

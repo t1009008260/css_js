@@ -1,0 +1,78 @@
+// @import "base.less"; //引入less文件
+@main-color:#29b078;
+
+/* 脚部 */
+footer {
+    background-color: @main-color;
+    color: #fff;
+    .box {
+        border-bottom: 1px solid #32c086;
+        .top {
+            display: flex;
+            justify-content: space-between;
+            font-size: .14rem;
+            .container {
+                width: 97%;
+                display: flex;
+                justify-content: space-between;
+                .first{
+                    margin: .37rem 0;
+                    .up{
+                        margin-bottom: .65rem;
+                    }
+                    .down a {
+                        color: #fff;
+                    }
+                }
+                .second {
+                    margin: .37rem 0;
+                    flex: 1;
+                    padding-left: 10%;
+                    .up{
+                        margin-bottom: 0.3rem;
+                    }
+                    .down {
+                        a {
+                            color: #fff;
+                        }
+                        p {
+                            line-height: 0.4rem;
+                        }
+                    }
+                }
+                .third {
+                    margin-top: .37rem;
+                    float: right;
+                    p {
+                        margin-bottom: 0.05rem;
+                    }
+                    img {
+                        width: 0.92rem;
+                        height: 0.92rem;
+                    }
+                }
+            }
+        }
+    }
+    .bottom {
+        background-color: @main-color;
+        text-align: center;
+        padding-top: .1rem;
+        font-size: .12rem;
+        padding-bottom: .1rem;
+        span {
+            margin: .05rem ;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .col-xs-12 {
+        width: 100%;
+    }
+    footer .box .top .container {
+        display: block;
+    }
+    footer .box .top .container .second {
+        padding-left: 0;
+    }
+  }

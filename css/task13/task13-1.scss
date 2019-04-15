@@ -1,0 +1,92 @@
+@import "base.scss";
+.classB {
+    border: 1px solid #e1e5e7;
+}
+header {
+    padding-left:convertPxFormUI(34px); 
+    img {
+    width: convertPxFormUI(34px);
+    height:convertPxFormUI(27px);
+    }
+}
+.container {
+        background-color: #f0f0f0;
+        padding:convertPxFormUI(28px) convertPxFormUI(36px) convertPxFormUI(60px) convertPxFormUI(36px);
+        margin-top:convertPxFormUI(67px) ;
+        .lastgame {
+           @extend .classB;
+            background-color: #fff;
+            line-height:convertPxFormUI(118px);
+            font-size:convertPxFormUI(35px);
+            color: #9a9a9a;
+
+            img {
+                width: convertPxFormUI(24px);
+                height:convertPxFormUI(40px);
+                top: 50%;
+                margin-top: convertPxFormUI(-20px);
+                right: convertPxFormUI(15px);
+            }
+        }
+        .content {
+            @extend .classB;
+            background-color: #fff;
+            margin-top: convertPxFormUI(25px);
+
+            .title {
+                line-height:convertPxFormUI(90px);
+                color: #fbb435;
+                font-size:convertPxFormUI(38px);
+                border-bottom: 2px solid #fbb435;
+            }
+            section {
+                .version1 {
+                    margin-top: convertPxFormUI(30px);
+                    background-color: $main-color;
+                    line-height:convertPxFormUI(134px);
+                    margin-right: convertPxFormUI(55px);
+                    margin-left:convertPxFormUI(55px);
+                    a {
+                        color: #fff;
+                        font-size: convertPxFormUI(32px);
+                    }
+                }
+                .user {
+                    line-height:convertPxFormUI(80px);
+                    span {
+                        font-size:convertPxFormUI(25px);
+                        color: #787878;
+                    }
+                }
+                .pages {
+                    width: 0;
+                    height: 0;
+                    border-top: convertPxFormUI(20px) solid transparent;
+                    border-left: convertPxFormUI(30px) solid #fbb435;
+                    border-bottom:convertPxFormUI(20px) solid transparent;
+                    position: absolute;
+                    right: convertPxFormUI(10px);
+                    top: 41%;
+                }
+            }
+            ol {
+                width: convertPxFormUI(100px);
+                margin: 0 auto;
+
+                margin-bottom: convertPxFormUI(10px);
+
+                li {
+                    width: convertPxFormUI(16px);
+                    height: convertPxFormUI(16px);
+                    background-color: #f0f0f0;
+                    border-radius: 50%;
+                    margin-right:convertPxFormUI(10px);
+                    &.active {
+                        background-color: $main-color;
+                    }
+                }
+            }
+        }
+
+
+}

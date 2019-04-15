@@ -1,0 +1,110 @@
+@import "base.scss";
+body {
+    background-color: $main-color;
+}
+header {
+    .tp {
+        width:convertPxFormUI(39px);
+        height:convertPxFormUI(40px);
+        margin-left: convertPxFormUI(22px);
+    }
+    .close {
+        width: convertPxFormUI(36px);
+        height:convertPxFormUI(36px);
+        margin-right:convertPxFormUI(22px)
+    }
+}
+/* 标题 */
+.title {
+    margin-top:convertPxFormUI(75px);
+    background-color: #b9e9f5;
+    color: #464646;
+    font-size:convertPxFormUI(26px); 
+    height: convertPxFormUI(82px);
+    line-height: convertPxFormUI(82px);
+    padding-left: convertPxFormUI(47px);
+    img {
+        width: convertPxFormUI(52px);
+        height:  convertPxFormUI(52px);
+        right: convertPxFormUI(15px);
+        top: 50%;
+        margin-top: convertPxFormUI(-26px);
+    }
+    span {
+        width: 0;
+        height: 0;
+        border-top: convertPxFormUI(10px) solid #b9e9f5;
+        border-left: convertPxFormUI(5px) solid transparent;
+        border-right: convertPxFormUI(5px) solid transparent;
+        position: absolute;
+        bottom:convertPxFormUI(-10px);
+        left:convertPxFormUI(70px);
+    }
+}
+/* 中部内容 */
+.contain {
+    padding: 0 convertPxFormUI(40px) convertPxFormUI(200px);
+    .txt {
+        color: #fff;
+        font-size: convertPxFormUI(24px);
+        margin: convertPxFormUI(25px) 0 convertPxFormUI(40px) convertPxFormUI(30px);
+    }
+    .content .list-boxs {
+        width: 100%;
+        margin-bottom: convertPxFormUI(70px);
+        .hbox {
+            position: relative;
+            .box {
+                width: convertPxFormUI(125px);
+                height: convertPxFormUI(125px);
+                border:4px solid #fff;
+                .user {
+                    background-color: #f5c97b;
+                    line-height: convertPxFormUI(98px);
+                    color: #565656;
+                    font-size:  convertPxFormUI(30px);
+                    text-align: center;
+                }
+                .num {
+                    background-color: #83b09a;
+                    height:  convertPxFormUI(27px);
+                    color: #fff;
+                    font-size: convertPxFormUI(23px);
+                    text-align: center;
+                }
+            }
+            .small-box {
+                width:convertPxFormUI(135px);
+                display: flex;
+                justify-content: space-between;
+                position: absolute;
+                top: convertPxFormUI(155px);
+                visibility: hidden;
+                img {
+                    width:convertPxFormUI(30px);
+                    height: convertPxFormUI(30px);
+                }
+            }
+            &:hover .small-box {
+                visibility: visible;
+            }
+        }
+    }
+}
+/* 脚部 */
+footer {
+    width: 100%;
+    padding: convertPxFormUI(42px) 0 convertPxFormUI(60px) 0;
+    bottom: 0;
+    background-color: $main-color;
+    .btn {
+        width: convertPxFormUI(490px);
+        height:  convertPxFormUI(90px);
+        line-height:  convertPxFormUI(90px);
+        background-color: #fbb435;
+        a {
+            color: #fff;
+            font-size:convertPxFormUI(49px);
+        }
+    }
+}

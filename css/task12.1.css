@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%; }
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 62.5% !important; } }
+@media only screen and (max-width: 425px) {
+  html {
+    font-size: 36.9% !important; } }
+@media only screen and (max-width: 375px) {
+  html {
+    font-size: 31.0% !important; } }
+@media only screen and (max-width: 320px) {
+  html {
+    font-size: 27.8% !important; } }
+body {
+  background-color: #ffffff; }
+
+.header {
+  height: 6rem;
+  width: 100%;
+  background-color: #68cdd5;
+  position: fixed;
+  top: 0;
+  z-index: 2; }
+  .header .txt1 {
+    color: #ffffff;
+    font-size: 2rem;
+    position: absolute;
+    font-weight: 600;
+    padding: 1.5rem;
+    left: 50%;
+    transform: translate(-50%); }
+  .header .txt2 {
+    padding: 1.5rem;
+    position: absolute;
+    bottom: 0.1rem; }
+
+.head {
+  background-image: url(" ../img/bg.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 18rem;
+  width: 100%;
+  margin-top: 6rem; }
+  .head .context {
+    width: 100%;
+    height: 18rem;
+    display: flex;
+    align-items: center; }
+    .head .context .head1 {
+      margin-left: 50px; }
+      .head .context .head1 .img1 {
+        width: 10rem;
+        height: 10rem; }
+    .head .context .head2 {
+      margin-left: 50px; }
+      .head .context .head2 img {
+        width: 1.5rem; }
+      .head .context .head2 .span1 {
+        font-size: 2rem;
+        color: #ffffff; }
+
+.txt3 {
+  font-size: 2rem;
+  padding: 1.5rem;
+  border-bottom: 1px solid #ccc; }
+  .txt3 span {
+    border-left: 5px solid #68cdd5;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem; }
+
+.txt4 {
+  border-bottom: 1px solid #ccc; }
+  .txt4 img {
+    padding-top: 2.5rem;
+    padding-left: 5rem;
+    padding-bottom: 2.5rem;
+    width: 2rem;
+    height: 2rem; }
+  .txt4 .span3 {
+    font-size: 1.5rem;
+    position: absolute;
+    margin-top: 2.5rem;
+    margin-left: 0.5rem; }
+
+.txt5 {
+  border-bottom: 1px solid #ccc;
+  padding: 2.5rem; }
+  .txt5 .span5 {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    color: #cccccc;
+    border-right: 1px solid #cccccc;
+    white-space: nowrap; }
+  .txt5 .span6 {
+    padding-left: 2rem;
+    font-size: 1.5rem; }
+
+.txt6 {
+  border-bottom: 1px solid #ccc;
+  padding: 2.5rem; }
+  .txt6 .span5 {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    color: #cccccc;
+    border-right: 1px solid #cccccc;
+    white-space: nowrap; }
+  .txt6 .span8 {
+    padding: 2.5rem;
+    font-size: 1.5rem; }
+
+.txt7 {
+  border-bottom: 1px solid #ccc;
+  padding: 2.5rem; }
+  .txt7 .span5 {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    color: #cccccc;
+    border-right: 1px solid #cccccc;
+    white-space: nowrap; }
+  .txt7 .span10 {
+    padding: 2.5rem;
+    font-size: 1.5rem;
+    color: red; }
+
+.txt8 {
+  border-bottom: 1px solid #ccc;
+  padding: 2.5rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15rem; }
+  .txt8 .span5 {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    color: #cccccc;
+    border-right: 1px solid #cccccc;
+    white-space: nowrap; }
+  .txt8 .span11 {
+    font-size: 1.5rem;
+    margin-left: 3rem; }
+
+.bottom {
+  position: fixed;
+  z-index: 2;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 1rem; }
+  .bottom .bottom1 {
+    background-color: #68cdd5;
+    height: 5.5rem;
+    width: 45%;
+    margin-top: 5rem;
+    margin-right: 1.5rem;
+    border-radius: 0.5rem;
+    float: right;
+    font-size: 2rem;
+    color: white;
+    line-height: 5.5rem;
+    text-align: center;
+    text-decoration: none; }
+  .bottom .bottom2 {
+    background-color: #ffffff;
+    height: 5rem;
+    width: 45%;
+    margin-top: 5rem;
+    margin-left: 1.5rem;
+    border-radius: 0.5rem;
+    border: 3px solid #68cdd5;
+    color: #68cdd5;
+    font-size: 2rem;
+    line-height: 5rem;
+    text-align: center; }
+
+/*# sourceMappingURL=task12.1.css.mapap */

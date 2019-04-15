@@ -1,0 +1,86 @@
+/*清除样式*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,input,a,p,textarea{
+    margin: 0;
+    padding: 0;
+}
+
+ul,ol,li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    display: block; 
+}
+
+img{
+    border: none;
+}
+/*css样式表*/
+/*css为clearfix，清除浮动*/
+.clearfix::before,
+.clearfix::after{
+    content: "";
+    height: 0;
+    line-height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+.clearfix:after{clear:both;} 
+.clearfix{ 
+    *zoom:1;/*IE/7/6*/
+}
+.fl {float:left}
+.fr {float:right}
+.al {text-align:left}
+.ac {text-align:center}
+.ar {text-align:right}
+.hide {display:none}
+.db{display:block;}
+.dib{display:inline-block;}
+.df{display:flex;}
+.jsb {justify-content: space-between}
+.aic {align-items: center}
+.pr {position: relative;}
+.pa{position: absolute;}
+.pf{position: fixed}
+.m0a{ margin: 0 auto;}
+body {
+    // font-size: .16rem;
+   font-family: "微软雅黑";
+}
+//计算rem基准字体
+$rem-base-font-size:100px;
+//UI设计图的分辨率宽度
+$UI-width:720px;
+// 需要适配的屏幕宽度
+$device-width:320px,375px,425px,768px;
+
+// 根据不同设备的屏幕宽度，定义<html>的基准font-size
+@mixin html-font-size {
+    @each $current-width in $device-width {
+        @media  only screen and (min-width:$current-width) {
+            html {
+                $x:$UI-width/$current-width; // // 计算出是几倍屏
+            font-size: $rem-base-font-size/$x!important;
+            }
+            
+        }
+    }
+}
+@include html-font-size();
+@function convertPxFormUI($px) {
+    @return $px/$rem-base-font-size*1rem;
+}
+$main-color : #29bde0;
+header {
+    width: 100%;
+    padding: convertPxFormUI(20px) 0;
+    background-color: $main-color;
+    position: fixed;
+    top: 0;
+    font-size:  convertPxFormUI(34px);
+    color: #fff;
+    z-index: 99;
+}

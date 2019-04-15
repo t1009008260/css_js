@@ -1,0 +1,83 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #eff0f4;
+}
+
+.header{
+    height: 5em;
+    width: 100%;
+    background-color: #68cdd5;
+    position: relative
+}
+.txt1{
+    color: #ffffff;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    position: absolute;
+}
+.txt2{
+    color: #ffffff;
+    font-size: 1.5rem;
+    position: absolute;
+    font-weight: 600;
+    padding: 1.5rem;
+    left: 48%;
+
+}
+.txt3{
+    color: #ffffff;
+    font-size: 1.5rem;
+    padding:1.5rem;
+    position: absolute;
+    right: 0.1rem;
+}
+
+.iphone, .locked {
+    background-color: #fff;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+.iphone input,.locked input {
+    border:none;
+    height: 5rem;
+    font-size: 2rem;
+    color: #eff0f4;
+    outline :none;
+
+}
+.iphone img,.locked img {
+    vertical-align: middle;
+    margin-left: 2.5rem;
+    border-right:thick double #eff0f4;padding-right: 2.5rem;
+    margin-right: 2.5rem;
+}
+.button{
+    width: 100%;
+    height: 6rem;
+    background-color: #68cdd5;
+    position: relative;
+    margin-bottom: 1rem;
+}
+.button1{
+    font-size: 1.5rem;
+    color: #ffffff;
+    letter-spacing:2rem;
+    position: absolute;
+    left: 46%;
+    padding:2rem;
+}
+.txt{
+    position: relative;
+    height:5em;
+    width: 100%;
+}
+.txt4{
+    font-size: 1rem;
+    right: 2rem;
+    text-decoration:underline;
+    color: #68cdd5;
+    position: absolute;
+}

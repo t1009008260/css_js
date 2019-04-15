@@ -1,0 +1,260 @@
+@charset "UTF-8";
+/*清除样式*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, input, a, p, textarea {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+img {
+  border: none;
+}
+
+/*css样式表*/
+/*css为clearfix，清除浮动*/
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+  /*IE/7/6*/
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.al {
+  text-align: left;
+}
+
+.ac {
+  text-align: center;
+}
+
+.ar {
+  text-align: right;
+}
+
+.hide {
+  display: none;
+}
+
+.db {
+  display: block;
+}
+
+.dib {
+  display: inline-block;
+}
+
+.df {
+  display: flex;
+}
+
+.jsb {
+  justify-content: space-between;
+}
+
+.aic {
+  align-items: center;
+}
+
+.pr {
+  position: relative;
+}
+
+.pa {
+  position: absolute;
+}
+
+.pf {
+  position: fixed;
+}
+
+.m0a {
+  margin: 0 auto;
+}
+
+body {
+  font-family: "微软雅黑";
+}
+
+@media only screen and (min-width: 320px) {
+  html {
+    font-size: 44.44444px !important;
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  html {
+    font-size: 52.08333px !important;
+  }
+}
+
+@media only screen and (min-width: 425px) {
+  html {
+    font-size: 59.02778px !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 106.66667px !important;
+  }
+}
+
+header {
+  width: 100%;
+  padding: 0.2rem 0;
+  background-color: #29bde0;
+  position: fixed;
+  top: 0;
+  font-size: 0.34rem;
+  color: #fff;
+  z-index: 99;
+}
+
+header {
+  border: 1px solid #74d4eb;
+}
+
+header .home {
+  width: 0.51rem;
+  height: 0.42rem;
+  margin-left: 0.2rem;
+}
+
+header .shape {
+  width: 0.4rem;
+  height: 0.4rem;
+  margin-right: 0.2rem;
+}
+
+/* 中部上 */
+.section1 {
+  margin-top: 0.86rem;
+  padding: 0.25rem 0.76rem;
+  background-color: #29bde0;
+}
+
+.section1 img {
+  width: 3.5rem;
+  height: 2.05rem;
+}
+
+.section1 .news {
+  margin-top: 0.2rem;
+  font-size: 0.33rem;
+  font-family: "HiraginoSansGB";
+  color: #ffc865;
+}
+
+.section1 .txt {
+  margin-top: 0.6rem;
+  color: #fff;
+  font-size: 0.26rem;
+}
+
+.section1 .txt p {
+  line-height: 0.4rem;
+}
+
+.section1 .txt .mar {
+  margin-right: 0.5rem;
+}
+
+/*中下*/
+.section2 {
+  margin-bottom: 1.35rem;
+}
+
+.section2 .list-info {
+  border-bottom: 1px solid #e1e5e7;
+}
+
+.section2 .list-info .info {
+  padding: 0 1rem 0.33rem 0.75rem;
+  color: #a6a6a6;
+  font-size: 0.26rem;
+}
+
+.section2 .list-info .info .title {
+  margin-bottom: 0.28rem;
+  margin-top: 0.12rem;
+  display: flex;
+  justify-content: space-between;
+  color: #c7c7c7;
+  font-size: 0.2rem;
+}
+
+.section2 .list-info .info .title .tt {
+  color: #515151;
+  font-size: 0.3rem;
+}
+
+.section2 .list-info .info .title .td {
+  padding-top: 0.1rem;
+}
+
+/* 脚部 */
+footer {
+  width: 100%;
+  padding: 0.23rem 0;
+  bottom: 0;
+  background-color: rgba(41, 189, 224, 0.52);
+}
+
+footer .btns {
+  margin: 0 0.23rem;
+}
+
+footer .btns .btn1 {
+  width: 2.7rem;
+  height: 0.87rem;
+  border-radius: 0.1rem;
+  color: #fff;
+  font-size: 0.4rem;
+  border: none;
+  outline: none;
+  background-color: #f66f6f;
+}
+
+footer .btns .btn1 a {
+  color: #fff;
+  font-size: 0.4rem;
+}
+
+footer .btns .btn2 {
+  width: 2.7rem;
+  height: 0.87rem;
+  border-radius: 0.1rem;
+  color: #fff;
+  font-size: 0.4rem;
+  border: none;
+  outline: none;
+  background-color: #fbb435;
+}

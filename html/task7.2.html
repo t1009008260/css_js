@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>任务七</title>
+    <link rel="stylesheet" href="../css/task7.2.css">
+</head>
+<body>
+<div class="header">
+    <img class="head1" src="../img/A.png" alt="">
+    <span class="head2">投票</span>
+    <img class="head3" src="../img/Aa.png" alt="">
+
+</div>
+
+<div class="head">
+    <span class="head4">发言讨论结束，大家请投票</span>
+    <img  id="control" class="music" src="../img/music.png" alt="">
+    <audio  id="audio" src="../audio/MAKE-UP%20-%20ペガサス幻想%20(纯音乐).mp3" controls="controls">
+        Your browser does not support the audio element.
+    </audio>
+</div>
+<span class="caret"></span>
+
+<div class="txt">
+    <span>点击得票数最多人的头像</span>
+</div>
+
+<div class="BOX">
+<div class="box">
+    <div class="box1">
+        <p class="p1">水民</p>
+        <p class="p2">一号</p>
+        <div class="img">
+            <img class="img1" src="../img/Ba.png" alt="">
+            <img class="img1" src="../img/Bb.png" alt="">
+            <img class="img1" src="../img/Bc.png" alt="">
+            <img class="img1" src="../img/Bd.png" alt="">
+        </div>
+    </div>
+    <div class="box1">
+        <p class="p1">水民</p>
+        <p class="p2">二号</p>
+        <div class="img">
+            <img class="img1" src="../img/Ba.png" alt="">
+            <img class="img1" src="../img/Bb.png" alt="">
+            <img class="img1" src="../img/Bc.png" alt="">
+            <img class="img1" src="../img/Bd.png" alt="">
+        </div>
+    </div>
+    <div class="box1">
+        <p class="p1">警察</p>
+        <p class="p2">三号</p>
+        <div class="img">
+            <img class="img1" src="../img/Ba.png" alt="">
+            <img class="img1" src="../img/Bb.png" alt="">
+            <img class="img1" src="../img/Bc.png" alt="">
+            <img class="img1" src="../img/Bd.png" alt="">
+        </div>
+    </div>
+</div>
+    <div class="box">
+        <div class="box1">
+            <p class="p1">法官</p>
+            <p class="p2">四号</p>
+            <div class="img">
+                <img class="img1" src="../img/Ba.png" alt="">
+                <img class="img1" src="../img/Bb.png" alt="">
+                <img class="img1" src="../img/Bc.png" alt="">
+                <img class="img1" src="../img/Bd.png" alt="">
+            </div>
+        </div>
+        <div class="box1">
+            <p class="p1">狙击手</p>
+            <p class="p2">五号</p>
+            <div class="img">
+                <img class="img1" src="../img/Ba.png" alt="">
+                <img class="img1" src="../img/Bb.png" alt="">
+                <img class="img1" src="../img/Bc.png" alt="">
+                <img class="img1" src="../img/Bd.png" alt="">
+            </div>
+        </div>
+        <div class="box1">
+            <p class="p1">医生</p>
+            <p class="p2">六号</p>
+            <div class="img">
+                <img class="img1" src="../img/Ba.png" alt="">
+                <img class="img1" src="../img/Bb.png" alt="">
+                <img class="img1" src="../img/Bc.png" alt="">
+                <img class="img1" src="../img/Bd.png" alt="">
+            </div>
+        </div>
+    </div>
+   <div class="box"> <div class="box1">
+       <p class="p1">杀手</p>
+       <p class="p2">七号</p>
+       <div class="img">
+           <img class="img1" src="../img/Ba.png" alt="">
+           <img class="img1" src="../img/Bb.png" alt="">
+           <img class="img1" src="../img/Bc.png" alt="">
+           <img class="img1" src="../img/Bd.png" alt="">
+       </div>
+   </div>
+       <div class="box1">
+           <p class="p1">水民</p>
+           <p class="p2">八号</p>
+           <div class="img">
+               <img class="img1" src="../img/Ba.png" alt="">
+               <img class="img1" src="../img/Bb.png" alt="">
+               <img class="img1" src="../img/Bc.png" alt="">
+               <img class="img1" src="../img/Bd.png" alt="">
+           </div>
+       </div>
+       <div class="box1">
+           <p class="p1">水民</p>
+           <p class="p2">九号</p>
+           <div class="img">
+               <img class="img1" src="../img/Ba.png" alt="">
+               <img class="img1" src="../img/Bb.png" alt="">
+               <img class="img1" src="../img/Bc.png" alt="">
+               <img class="img1" src="../img/Bd.png" alt="">
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="bottom">
+    <div class="bottom1">
+        <a href="../html/task7.3.html">投死</a>
+    </div>
+</div>
+
+</body>
+</html>
+
+<script>
+    window.onload = function () {
+        var btn = document.getElementById("control");
+        var audio = document.getElementById("audio");
+        btn.onclick = function (e) {
+            if (audio !== null) {
+                //检测播放是否已暂停.audio.paused 在播放器播放时返回false.
+                console.log(audio.paused);
+                console.log(e);
+                if (audio.paused) {
+                    audio.play();
+                }
+                else {
+                    audio.pause();
+                }
+            }
+        }
+    }
+
+</script>

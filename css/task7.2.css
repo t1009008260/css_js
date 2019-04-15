@@ -1,0 +1,171 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #29bde0;
+    margin: 0;
+}
+
+.header{
+    width: 100%;
+    height: 8rem;
+    background-color: #29bde0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+}
+
+.head1{
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-left: 2rem;
+}
+
+.head2{
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+.head3{
+    width: 3rem;
+    height: 3rem;
+    margin-right: 2rem;
+}
+
+.head{
+    width: 100%;
+    height: 7rem;
+    background-color: #b9e9f5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 8rem;
+}
+
+.head4{
+    font-size: 2.5rem;
+    color: black;
+    margin-left: 5rem;
+}
+
+.music{
+    width: 5rem;
+    height: 5rem;
+    padding-right: 1rem;
+}
+
+.head audio{
+    display: none;
+}
+
+.caret{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 28px solid;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    color: #b9e9f5;
+    margin-left: 105px;
+}
+
+.txt{
+    font-size: 2rem;
+    color: #ffffff;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    margin-left: 105px;
+}
+
+.BOX{
+    padding-bottom: 20rem;
+}
+
+.box{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4.5rem;
+}
+
+.box1{
+    width: 12rem;
+    height: 12rem;
+    border: 5px solid #ffffff;
+}
+
+.p1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70%;
+    margin: 0;
+    color: #565656;
+    background-color: #f5c97b;
+    font-size: 3vw;
+}
+
+.p2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+    margin: 0;
+    background-color: #83b09a;
+    font-size: 3vw;
+    color: #ffffff;
+}
+
+.img{
+    height: 5rem;
+    align-items: center;
+    display: none;
+}
+
+.img1{
+    width: 23%;
+}
+
+.box1:hover .img{
+    display: block;
+    margin-top: 1.2rem;
+}
+
+.bottom{
+    width: 100%;
+    height: 14rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+    bottom: 0;
+    background-color: #29bde0;
+}
+
+.bottom1{
+    width: 80%;
+    height: 8rem;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom2{
+    font-size: 2rem;
+    color: black;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 3rem;
+}

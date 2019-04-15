@@ -1,0 +1,102 @@
+@import "base.scss";
+@mixin btn-size {
+    width:convertPxFormUI(270px);
+    height:convertPxFormUI(87px);
+    border-radius: convertPxFormUI(10px);
+    color: #fff;
+    font-size: convertPxFormUI(40px);
+    border: none;
+    outline: none;
+}
+header {
+    border: 1px solid #74d4eb;
+    .home {
+        width: convertPxFormUI(51px);
+        height: convertPxFormUI(42px);
+        margin-left:convertPxFormUI(20px);
+    }
+    .shape {
+        width: convertPxFormUI(40px);
+        height: convertPxFormUI(40px);
+        margin-right:convertPxFormUI(20px);
+    }
+}
+/* 中部上 */
+.section1 {
+    margin-top:convertPxFormUI(86px);
+    padding: convertPxFormUI(25px) convertPxFormUI(76px);
+    background-color: $main-color; 
+    img {
+        width: convertPxFormUI(350px);
+        height: convertPxFormUI(205px);
+    }
+    .news  {
+        margin-top:convertPxFormUI(20px);
+        font-size:convertPxFormUI(33px);
+        font-family: "HiraginoSansGB";
+        color: #ffc865;
+    }
+    .txt {
+        margin-top: convertPxFormUI(60px);
+        color: #fff;
+        font-size: convertPxFormUI(26px);
+        p {
+            line-height: convertPxFormUI(40px);
+        }
+        .mar{
+            margin-right:convertPxFormUI(50px);
+        }
+    }
+
+}
+/*中下*/
+.section2 {
+    margin-bottom: convertPxFormUI(135px);
+    .list-info {
+        border-bottom: 1px solid #e1e5e7;
+        .info {
+            padding: 0 convertPxFormUI(100px) convertPxFormUI(33px) convertPxFormUI(75px);
+            color: #a6a6a6;
+            font-size: convertPxFormUI(26px);
+            .title {
+                margin-bottom: convertPxFormUI(28px);
+                margin-top: convertPxFormUI(12px);
+                display: flex;
+                justify-content: space-between;
+                color: #c7c7c7;
+                font-size: convertPxFormUI(20px);
+                .tt {
+                    color: #515151;
+                    font-size: convertPxFormUI(30px);
+                }
+                .td {
+                    padding-top: convertPxFormUI(10px);
+                }
+            }
+
+        }
+    }
+   }
+/* 脚部 */
+footer {
+    width: 100%;
+    padding:convertPxFormUI(23px) 0;
+    bottom: 0;
+    background-color: rgba(41, 189, 224, .52); 
+    .btns {
+        margin: 0 convertPxFormUI(23px);
+        .btn1 {
+            @include btn-size();
+            background-color: #f66f6f;
+            a {
+                color: #fff;
+                font-size: convertPxFormUI(40px);
+            }
+        }
+        .btn2 {
+            @include btn-size();
+            background-color: #fbb435;
+        }
+        
+    }
+}

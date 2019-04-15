@@ -1,0 +1,18 @@
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.box1{
+    background-color: #29b078;
+    height: 80%;
+    width: 30%;
+}
+
+.box2{
+    background-color: #29bde0;
+    height: 50rem;
+    width: 30%;
+}

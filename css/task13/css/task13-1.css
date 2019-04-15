@@ -1,0 +1,231 @@
+@charset "UTF-8";
+/*清除样式*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, input, a, p, textarea {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+img {
+  border: none;
+}
+
+/*css样式表*/
+/*css为clearfix，清除浮动*/
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+  /*IE/7/6*/
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.al {
+  text-align: left;
+}
+
+.ac {
+  text-align: center;
+}
+
+.ar {
+  text-align: right;
+}
+
+.hide {
+  display: none;
+}
+
+.db {
+  display: block;
+}
+
+.dib {
+  display: inline-block;
+}
+
+.df {
+  display: flex;
+}
+
+.jsb {
+  justify-content: space-between;
+}
+
+.aic {
+  align-items: center;
+}
+
+.pr {
+  position: relative;
+}
+
+.pa {
+  position: absolute;
+}
+
+.pf {
+  position: fixed;
+}
+
+body {
+  font-family: "微软雅黑";
+}
+
+@media only screen and (min-width: 320px) {
+  html {
+    font-size: 44.44444px !important;
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  html {
+    font-size: 52.08333px !important;
+  }
+}
+
+@media only screen and (min-width: 425px) {
+  html {
+    font-size: 59.02778px !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 106.66667px !important;
+  }
+}
+
+header {
+  width: 100%;
+  padding: 0.2rem 0;
+  background-color: #29bde0;
+  position: fixed;
+  top: 0;
+  font-size: 0.34rem;
+  color: #fff;
+}
+
+.classB, .container .lastgame, .container .content {
+  border: 1px solid #e1e5e7;
+}
+
+header {
+  padding-left: 0.34rem;
+}
+
+header img {
+  width: 0.34rem;
+  height: 0.27rem;
+}
+
+.container {
+  background-color: #f0f0f0;
+  padding: 0.28rem 0.36rem 0.6rem 0.36rem;
+  margin-top: 0.67rem;
+}
+
+.container .lastgame {
+  background-color: #fff;
+  line-height: 1.18rem;
+  font-size: 0.35rem;
+  color: #9a9a9a;
+}
+
+.container .lastgame img {
+  width: 0.24rem;
+  height: 0.4rem;
+  top: 50%;
+  margin-top: -0.2rem;
+  right: 0.15rem;
+}
+
+.container .content {
+  background-color: #fff;
+  margin-top: 0.25rem;
+}
+
+.container .content .title {
+  line-height: 0.9rem;
+  color: #fbb435;
+  font-size: 0.38rem;
+  border-bottom: 2px solid #fbb435;
+}
+
+.container .content section .version1 {
+  margin-top: 0.3rem;
+  background-color: #29bde0;
+  line-height: 1.34rem;
+  margin-right: 0.55rem;
+  margin-left: 0.55rem;
+}
+
+.container .content section .version1 a {
+  color: #fff;
+  font-size: 0.32rem;
+}
+
+.container .content section .user {
+  line-height: 0.8rem;
+}
+
+.container .content section .user span {
+  font-size: 0.25rem;
+  color: #787878;
+}
+
+.container .content section .pages {
+  width: 0;
+  height: 0;
+  border-top: 0.2rem solid transparent;
+  border-left: 0.3rem solid #fbb435;
+  border-bottom: 0.2rem solid transparent;
+  position: absolute;
+  right: 0.1rem;
+  top: 41%;
+}
+
+.container .content ol {
+  width: 1rem;
+  margin: 0 auto;
+  margin-bottom: 0.1rem;
+}
+
+.container .content ol li {
+  width: 0.16rem;
+  height: 0.16rem;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  margin-right: 0.1rem;
+}
+
+.container .content ol li.active {
+  background-color: #29bde0;
+}

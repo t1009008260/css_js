@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #fafafa;
+}
+
+.header1{
+    width: 100%;
+    height: 3rem;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #29b078;
+}
+
+.header2{
+    width: 100%;
+    height: 5rem;
+    background-color: #29b078;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header21{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #ffffff;
+    height: 5rem;
+}
+
+.header22{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header21 span{
+    margin-right: 3rem;
+}
+
+.header21 a{
+    margin-right: 3rem;
+    color: #ffffff;
+}
+
+.title{
+    line-height: 8rem;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.title .txt1{
+    color: #333;
+}
+
+.title .txt2{
+    color: #29b078;
+}
+
+.fx{
+    padding: 2.3rem 0;
+}
+
+.fx .tt{
+    color: #999;
+}
+
+.fx span{
+    font-size: 1.4rem;
+    color: #333;
+    margin-right: 3rem;
+}
+
+.fx span.active{
+    background-color: #29b078;
+    color: #fff;
+}
+
+.section{
+    padding-bottom: 23rem;
+}
+
+.section1 .head {
+    color: #333;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 3.5rem 0;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.section .content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.content .people {
+    width: 32%;
+    box-shadow: 0 0 10px 0 rgba(202, 202, 202, 0.75);
+    border-radius: 0.5rem;
+    margin-top: 5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.people .first {
+    display: flex;
+    align-items: center;
+    padding: 2.5rem 1rem;
+    border-bottom: 1px solid #e6e6e6;
+    color: #333;
+}
+
+.first img {
+    width: 14rem;
+    height: 14rem;
+    margin-right: 1rem;
+}
+
+.first .txt p {
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.first .txt span {
+    font-size: 1.4rem;
+}
+
+.people .sec {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.sec .menk {
+    width: 50%;
+    border-right: 1px solid #e6e6e6;
+    margin-left: 1rem;
+    padding: 1.5rem 0;
+}
+
+.sec img {
+    width: 1.6rem;
+    height: 1.5rem;
+    margin-left: 1rem;
+}
+
+.sec .nan {
+    margin-left: 1rem;
+}
+
+.sec span {
+    color: #333;
+}
+
+.sec i, .four i {
+    color: #f01400;
+}
+
+.sec .nan {
+    margin-left: 1rem;
+}
+
+.people .third {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e6e6e6;
+    font-size: 1.2rem;
+}
+
+.third .l {
+    width: 50%;
+    text-align: center;
+}
+
+.third .r {
+    color: #333;
+    width: 50%;
+    border-left: 1px solid #e6e6e6;
+}
+
+.third .r .line {
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.third .r li span {
+    margin-left: 3rem;
+    white-space: nowrap;
+}
+
+.third .r li {
+    padding: 1rem 2rem;
+}
+
+.people .four {
+    color: #333;
+    font-weight: 600;
+    font-size: 1.4rem;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 1.5rem 1rem;
+}
+
+.people .five {
+    font-size: 1.2rem;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 1.5rem 1rem;
+}
+
+.people .mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.8);
+    top: 100%;
+    transition-duration: 1s;
+    text-align: center;
+}
+
+.mask p {
+    margin-bottom: 3.5rem;
+    margin-top: 7rem;
+    color: #fff;
+}
+
+.mask span {
+    color: #fff;
+    display: inline-block;
+    width: 80%;
+}
+
+.people:hover .mask {
+    top: 0;
+    left: 0;
+}
+
+
+
+footer{
+    background-color: #29b078;
+    color: #fff;
+}
+
+.down{
+    border-bottom: 1px solid #32c086;
+}
+
+.down1{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+}
+
+.down2{
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.down21{
+    margin: 3.7rem 0;
+}
+
+.up{
+    margin-bottom: 6.5rem;
+}
+
+.bottom a{
+    color: #ffffff;
+}
+
+.second{
+    margin: 3.7rem 0;
+}
+
+.up1{
+    margin-bottom: 3rem;
+}
+
+.bottom1 p{
+    line-height: 4rem;
+}
+
+.bottom1 p a{
+    color: #ffffff;
+}
+
+.footer .third{
+    margin-top: 3.7rem;
+    float: right;
+}
+
+.third p{
+    margin-bottom: 0.5rem;
+}
+
+.bottom2{
+    background-color: #29b078;
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+}
+
+.bottom2 span{
+    margin: 0.5rem;
+}
+
+
+
+

@@ -1,0 +1,48 @@
+html{
+    Font-size:625%
+}
+body{
+    background-color: #68cdd5;
+}
+.back {
+    display: block;
+    margin-top: 4px;
+    margin-left: 4px;
+}
+.logo{
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 1.20rem;
+}
+.logo img {
+    width: 1.81rem;
+    height: 0.70rem;
+}
+.txt{
+    color: #ffffff;
+
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 0.15rem;
+
+}
+.circle1{
+    text-align: center;
+    margin-top: 30%;
+    margin-left: 20%;
+    float: left;
+    font-size: 0.15rem;
+}
+.circle1 p{
+    color: #ffffff;
+}
+.circle2{
+    text-align: center;
+    margin-top: 30%;
+    margin-right: 20%;
+    float: right;
+    font-size: 0.15rem;
+}
+.circle2 p{
+    color: #ffffff;
+}

@@ -1,0 +1,101 @@
+
+$backgroundColor:#5fc0cd;
+$width:100%;
+$color:#fff;
+@mixin input {
+  border:none;
+  height: 5rem;
+  font-size: 2rem;
+  color: #eff0f4;
+  outline :none;
+}
+@mixin div {
+  background-color: #fff;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+@mixin  img {
+  vertical-align: middle;
+  margin-left: 2.5rem;
+  border-right:thick double #eff0f4;
+  padding-right: 2.5rem;
+  margin-right: 2.5rem;
+}
+
+body{
+  margin:0;
+  padding:0;
+  background-color:#eff0f4;
+}
+
+.header {
+  background-color: $backgroundColor;
+  color: $color;
+  width:$width;
+  height:6rem;
+  position: relative;
+  .txt1 {
+    font-size: 1.8rem;
+    position: absolute;
+    left: 0;
+    padding: 2rem;
+  }
+  .txt2{
+    font-size: 1.8rem;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    padding:2rem;
+  }
+  .txt3{
+    font-size: 1.8rem;
+    position: absolute;
+    right:0;
+    padding: 2rem;
+
+  }
+}
+
+  .iphone,.locked {
+    @include div;
+  }
+  .iphone img ,.locked img {
+    @include img;
+  }
+  .iphone input,.locked input {
+    @include input;
+
+  }
+
+
+
+
+.button{
+  width: $width;
+  height: 6rem;
+  background-color: #68cdd5;
+  position: relative;
+  margin-bottom: 1rem;
+  .button1{
+    font-size: 1.5rem;
+    color: $color;
+    letter-spacing:2rem;
+    position: absolute;
+    left: 46%;
+    padding:2rem;
+  }
+}
+
+.txt{
+  position: relative;
+  height:5em;
+  width: $width;
+  .txt4{
+    font-size: 1rem;
+    right: 2rem;
+    text-decoration:underline;
+    color: #68cdd5;
+    position: absolute;
+  }
+}
